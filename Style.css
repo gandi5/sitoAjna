@@ -1,0 +1,1013 @@
+/*Header*/
+
+header{display: flex; position: fixed; top: 0;left: 0; z-index: 100; width: 100%;}
+
+.logo{margin: 20px 0 0 20; z-index: 1}
+
+.img-logo{width: 90px;}
+
+.menu{width: 100%; text-align: end; z-index: 0; transition: all 1s ease 0s}
+
+.menu li{margin-top: 15px; display: inline-block;}
+
+.menu li a{padding: 40px; display: block; transition: 1s }
+
+.menu li a:hover,
+.menu li a:active
+{text-decoration: underline #fff; }
+
+.hamburger{display: none}
+
+
+
+
+/*Media header fino tablet*/
+
+@media (max-width: 1100px){
+    
+
+    
+     .menu li a{ padding: 30;font-size: 16}
+    
+    .menu li{margin-top: 25px;}
+    
+    
+}
+
+/*Media header smartphone*/
+
+
+@media (max-width: 900px){
+
+
+    .menu li a{ padding: 15; font-size: 15px;}
+    
+    .menu li{margin-top: 35px;}
+
+
+}
+
+
+@media (max-width: 740px){
+
+
+    .menu { position: absolute;  top: 0;right: -100%; background: #000; height: 100vh; padding-top: 80px;}
+    
+    .menu li{display: block; text-align: left; margin-top: 65px;}
+    
+    .menu li a{font-size: 20; padding: 0px; margin-top: 0;}
+    
+    .hamburger{display: block; width: 40px;height: 30px; position: absolute;top: 70;right: 30;}
+    
+    .hamburger span{background: #fff; width: 100%; height: 4px; display: block; margin-bottom: 6px; transition: 1s}
+    
+    .logo{margin: 40 0 0 40}
+    
+    
+}
+
+/* Toogle menu*/
+
+.apri--menu{right: 0%;}
+
+/* Toggle per aggiustare colori menu gallery */
+
+.span--bianco{background: #fff !important}
+
+.menu--bianco li a{color: #fff !important}
+
+.nerisci{color: #000}
+
+
+
+
+
+/* Generali */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,200;1,300;1,400;1,700&family=Playfair:ital,wght@1,300&display=swap');
+
+body{font-family: 'Montserrat', sans-serif;}
+
+*{box-sizing: border-box; margin-top: 0; }
+
+a{text-decoration: none; font-size: 20; color: #fff; font-weight: bold}
+
+h1{font-size: 85; margin-bottom: 15px; text-align: center; color: #fff; }
+
+p{color: #fff}
+
+
+/*Lettere rosse*/
+
+.lettera-rossa{color: red}
+
+
+/*MEDIA INDEX*/
+
+
+
+
+/*INDEX*/
+
+
+
+/*Hero*/
+
+.hero{ background: linear-gradient(180deg, rgba(0,0,0,0.4) 30%, rgba(0,0,0,0.4) 30%), url('cop-modificata.png') ; background-size: cover; background-repeat: no-repeat; height: 750px; display: flex; width: 100%; align-items: center; background-position: center
+
+}
+
+.hero__content{ margin: auto; margin-top: 150px; }
+
+
+.titolo-Index{ font-size: 65; margin-bottom: 15px; text-align: center; background: #385e69; border-radius: 10px; padding: 13px;}
+
+/*#ccb684*/
+
+.sottotitolo{font-size: 30px; text-align: center; font-weight: 500; color: #fff;border-radius: 10px; padding: 13px; text-shadow: 2px 2px #000}
+
+.ascoltala{font-size: 24px;font-weight: 500;transition: 1s  }
+
+.bottoneascoltala{margin-top: 110px; text-align: center;background: #000; padding: 15px;max-width: 200; margin-left: 170;border-radius: 10px;transition: all 1s ease 0s}
+
+
+
+/*Media hero Index */
+
+@media (max-width: 1100px){
+    
+.titolo-Index{font-size: 41; }
+
+    .sottotitolo{font-size: 20; }
+
+    .bottoneascoltala{ margin-left: 80;}
+    
+    .hero{ background: linear-gradient(180deg, rgba(0,0,0,0.3) 30%, rgba(0,0,0,0.3) 30%), url('cop-ridotta.png') ; background-size: cover; background-repeat: no-repeat; display: flex; width: 100%; align-items: center; background-position: center
+
+}
+}
+
+@media (max-width: 600px){
+
+
+    .titolo-Index{font-size: 42; }
+
+    .sottotitolo{font-size: 26;}
+
+    .ascoltala{font-size: 18px; }
+    
+    .hero{ background: linear-gradient(180deg, rgba(0,0,0,0.3) 30%, rgba(0,0,0,0.3) 30%), url('ultima-tagliata.jpg') ; background-size: cover; background-repeat: no-repeat; display: flex; width: 100%; align-items: center; background-position: center
+
+}
+    
+    .bottoneascoltala{margin-top: 100px; background: #000;max-width: 200; margin-left: 75;border-radius: 10px}
+    
+        .hero__content{ margin-top: 150px;   }
+    
+}
+
+ .bottoneascoltala:hover{ background: #385e69}
+
+
+.ascoltala:hover,
+.ascoltala:active
+{color: #ccb684;}
+
+.bgnero{background: #000 !important}
+
+
+/*Sezione 1*/
+
+.sezione1{position: relative}
+
+.testo-sezione1 { margin: 100px 0 0 0px; text-align: center; display: flex; flex-direction: column; height: 100vh; background: url('Logo-Ajna-Trasparente.jpg'); background-size: contain; background-repeat: no-repeat; background-position: left;}
+
+.testo-sezione1 p{color: #000; font-weight: bold; font-size: 40}
+
+
+.bottonescopri{align-self: center; margin-top: 50px}
+
+
+.scopri{ color: red;font-weight: bold; font-size: 40; padding: 20px; display: block; border-radius: 4px; border: 3px solid #000; background: #fff; max-width: 15%; min-width: 200px;transition: 1s}
+
+.scopri:hover,
+.scopri:active
+{background: #000; }
+
+
+/* Slider */
+
+.main-carousel{ padding: 40px 0; }
+
+/*background: #ffb3b3*/
+
+.carousel-cell{height: 400px; width: 400px; background: #ffb3b3; border-radius: 100%;  display: flex; margin-right: 40px; line-height: 2; text-align: center;}
+
+
+.carousel-cell p{  margin-top: 70px; margin-left: 0px; color: #000; font-size: 35; font-style: italic; font-family: 'Playfair'}
+
+
+.slider{width: 400px; height: 500px;position: absolute; bottom: 0; right: 150;}
+
+.nome-canzone{font-style: normal; font-weight: 600; opacity: 1;}
+
+
+
+/*Media sezione 1*/
+
+
+@media (max-width: 1300px){
+
+    .slider{;position: static; margin: auto; margin-top: -250; width: 100%;}
+    
+    .carousel-cell{}
+
+    .main-carousel{width: 100%;}
+    
+
+}
+
+
+
+
+@media (max-width: 1100px){
+
+     .testo-sezione1 p{font-size: 30}
+ 
+     .bottonescopri{ transform: scale(0.8)}
+    
+    .slider{;position: static; margin: auto; margin-top: -350; width: 100%; height: 400px;}
+    
+    .carousel-cell{height: 300px; width: 300px;}
+
+    .main-carousel{width: 100%; height: 400px;}
+    
+   .carousel-cell p{  margin-top: 40px; color: #000; font-size: 27; font-style: italic; font-weight: 300}
+
+   
+    
+}
+
+
+
+@media (max-width: 740px){
+      
+      .testo-sezione1 p{font-size: 25;}
+ 
+     .bottonescopri{ transform: scale(0.6); margin-top: 40px;}
+     
+        
+    
+    .slider{position: static; margin: auto; margin-top: -470px; width: 100%;}
+    .carousel-cell{height: 250px; width: 250px;}
+
+    .main-carousel{width: 100%;}
+    
+    .carousel-cell p{  margin-top: 30px; color: #000; font-size: 23; font-style: italic; font-weight: 300}
+
+
+}
+
+@media (max-width: 500px){
+      
+      .testo-sezione1 p{font-size: 18}
+ 
+     .bottonescopri{ transform: scale(0.55); margin-top: 25px;}
+     
+ .slider{position: static; margin: auto; margin-top: -490px; width: 100%;}
+    .carousel-cell{height: 275px; width: 275px; }
+
+    .main-carousel{width: 100%;}
+    
+ .carousel-cell p{  margin-top: 40px; color: #000; font-size: 23; font-style: italic; font-weight: 300}
+
+}
+
+@media (max-width: 330px){
+      
+      
+     
+ .slider{position: static; margin: auto; margin-top: -330px; width: 100%;}
+    
+}
+
+/*Sezione 2*/
+
+.sezione-2{width: 100%;height: 1000px; background: linear-gradient(180deg, rgba(0,0,0,0.4) 30%, rgba(0,0,0,0.4) 30%), url('Live-basso-fabio.jpg'); background-size: cover; background-repeat: no-repeat; display: flex; padding: 50px;}
+
+
+
+.zona-foto-album{width: 50%;}
+
+
+.foto-gestazione{border: 5px solid #fff; margin-top: 170px; margin-left: 10px;}
+
+
+
+.bottone-ascoltaora{align-self: center; margin-top: 100px; text-align: center}
+
+
+.ascoltaora-2{ color: #fff;font-weight: bold; font-size: 30; padding: 20px; display: block; border-radius: 15px; border: 5px solid #fff; background: #05547d; max-width: 15%; min-width: 200px; margin-left: 100px; transition: 1s}
+
+.ascoltaora-2:hover,
+.ascoltaora-2:active
+{ background: #1172a9 }
+
+.testo-album{padding: 50px;}
+
+.testo-album h2{color: #fff; font-size: 55; margin-top: 10px;}
+
+.testo-album p{color: #fff; font-size: 30; margin-top: 150px}
+
+
+
+
+.bottone-scoprialbum{align-self: center; margin-top: 245px; text-align: center}
+
+
+.scoprialbum{ color: #fff;font-weight: bold; font-size: 30; padding: 20px; display: block; border-radius: 15px; border: 5px solid #fff; background: #000; max-width: 15%; min-width: 230px; margin-left: 100px; transition: 1s}
+
+.scoprialbum:hover,
+.scoprialbum:active{background: #222}
+
+/*Media Sezione 2*/
+
+@media (max-width: 1300px){
+      
+    .testo-album h2{ font-size: 40; margin-top: 10px;}
+      
+    .testo-album p{font-size: 25; margin-top: 150px}
+    
+    .bottone-scoprialbum{margin-top: 303px}
+}
+
+
+@media (max-width: 1100px){
+      
+    .zona-foto-album{ width: 30%; position: relative}
+   
+    .zona-foto-album img{width: 100%; min-width: 250;}
+    
+    .testo-album{padding-left: 150px; padding-right: 0}
+    
+    .ascoltaora-2{position: absolute; left: -80;bottom: 230;}
+    
+     .bottone-scoprialbum{margin-top: 162px}
+    
+    .scoprialbum{ color: #fff; border: 5px solid #fff; background: #05547d; transition: 1s}
+    
+    .scoprialbum:hover,
+    .scoprialbum:active
+    { background: #1172a9 }
+}
+
+
+
+@media (max-width: 1100px){
+      
+    .sezione-2{display: block; position: relative}
+    
+    .testo-album h2{ font-size: 40; text-align: center;position: absolute;top: 45; left: 50%;transform: translate(-45%); margin-bottom: 30px} 
+    
+    
+     .zona-foto-album {width: 40%; margin: auto; }
+    
+    .zona-foto-album img{width: 100%;}
+    
+    .testo-album p{text-align: center;position: absolute;bottom: 200; left: 50%;transform: translate(-50%); font-size: 36; width: 100%}
+    
+    
+    .bottone-scoprialbum{position: absolute;bottom: 550px; left: -50px; transform: scale(0.8)}
+    
+    .ascoltaora-2{display: none}
+    
+    
+    
+}
+
+@media (max-width: 800px){
+      
+    .zona-foto-album img{position: absolute; top: -140px;left: 0; max-width: 100}
+    
+      .testo-album h2{ font-size: 27}
+    
+    .zona-foto-album{min-width: 550}
+    
+    .bottone-scoprialbum{position: absolute;bottom: 580px; left: 270px; transform: scale(0.7)}
+    
+      .testo-album p{bottom: 350px;}
+    
+}
+
+
+@media (max-width: 580px){
+      
+    
+    .bottone-scoprialbum{position: absolute;bottom: 580px; left: 125px; transform: scale(0.48);}
+        
+        
+        
+        .zona-foto-album img{ transform: scale(0.8);transform: translate(-20%); border: 2px solid #fff;}
+    
+    .testo-album h2{ font-size: 22}
+    
+    .testo-album p{font-size: 22; bottom: 370px;}
+}
+
+@media (max-width: 370px){
+      
+    
+.scoprialbum{border: 0px solid red}
+}
+/*News*/
+
+
+.news{height: 250px;}
+
+.news h2{font-size: 48; font-weight: bold; margin: 150 0 0 100}
+
+/*Media News*/
+
+@media (max-width: 500px){
+      
+    .news h2{font-size: 35; margin: 100 0 0 30}
+    
+
+}
+
+
+
+/*Footer*/
+
+footer{background: #000; height: 400px; padding: 25px;}
+
+
+.container__footer{margin-top: 100px;}
+
+.social{ display: flex; justify-content: space-around; padding: 10px;}
+
+.log1{max-width: 10%; max-height: 10%; min-width: 7%; min-height: 7%; ;}
+
+.social a { display: inline-block}
+.social a img{max-width: 100%; max-height: 100%;}
+
+footer p{font-size: 35; color: #fff; text-align: center; font-weight: bold}
+
+
+/*Media footer*/
+
+@media (max-width: 750px){
+      
+   footer{ height: 300px; padding: 5}
+    
+    .log1{min-width: 55px}
+    
+    
+}
+
+@media (max-width: 400px){
+      
+    footer p{font-size: 25}
+    
+    
+}
+
+
+
+/*CONCERTI*/
+
+.header-concerti{z-index: 100}
+
+/*Hero*/
+
+
+.bg-video{ background:linear-gradient(180deg, rgba(0,0,0,0.4) 70%, rgba(0,0,0,0.4) 70%), url('Video.ajna.mp4'); background-size: cover; background-repeat: no-repeat; height: 100vh; z-index: 0; width: 100%; position: fixed; top:0;left: 0;background-position: center}
+
+
+/*Hero content*/
+
+.hero__content-concerti{z-index: 1; width: 100%; position: relative; margin-top: 200px;}
+
+
+.h1-concerti{font-size: 85;color: #fff; background: #1172a9}
+
+
+.tabella p{font-weight: bold; font-size: 50; color: #fff}
+
+.festa{font-size: 26 !important; margin-top: 0}
+
+
+#videone{ min-width: 100%; min-height: 100%; z-index: 0; position: absolute; top: -1000;left: 0; z-index: 0;}
+
+
+
+
+/*Tabella*/
+
+.tabella{ display: flex; padding: 50 0 0 100;   border-top: 4px solid black; border-bottom:  4px solid black; background: url('Video-Ajna'), linear-gradient(180deg, rgba(0,0,0,0.4) 70%, rgba(0,0,0,0.4) 70%); z-index: 10; position: relative; margin-top: 300px;}
+
+
+
+.col1{width: 50%;}
+
+/*News*/
+
+.news-concerti{height: 250px;}
+
+.aggiornato-concerti{font-size: 48; font-weight: bold; margin: 150 0 0 100; color: #fff; text-align: center; }
+
+.footer-conc{position: relative; margin-top: 500}
+
+@media (max-width: 1300px){
+      
+
+    #videone{  top: -700;}
+    
+    
+}
+
+@media (max-width: 900px){
+      
+
+    #videone{  top: -400;}
+    
+    
+    
+    .h1-concerti{font-size: 70}
+
+    .tabella{padding: 25 0 0 50; margin-top: 100}
+
+.tabella p{font-size: 30; margin-top: 0}
+    
+    .festa{font-size: 18 !important}
+    
+    .aggiornato-concerti{font-size: 30}
+    
+    .footer-conc{margin-top: -30}
+    
+   
+    
+}
+
+
+@media (max-width: 600px){
+      
+
+    
+    .h1-concerti{font-size: 45}
+
+
+.tabella p{font-size: 22}
+    
+    .aggiornato-concerti{font-size: 25}
+    
+    #videone{  top: -100;}
+    
+    .news-concerti{margin-left: -100px;}
+    
+    .tabella{padding-left: 5; padding-right: 5}
+    
+    
+    
+}
+
+
+
+/*CONTATTI*/
+
+.hamburger--nero span{background: #000}
+
+
+
+.body-contatti{background: #000}
+
+.h1-contatti{font-size: 85; margin-top: 310px; color: #fff; background: #333; padding: 10 0}
+
+.rimani-aggiornato-contatti{height: 250px; border-bottom: 3px solid red; padding-top: 15px}
+
+.rimani-aggiornato-contatti p{font-size: 48; font-weight: bold; margin: 150 0 0 100; color: #fff; text-align: center}
+
+
+/*Media contatti*/
+
+
+@media (max-width: 800px){
+      
+    .h1-contatti{font-size: 50; margin-top: 250}
+    
+    .rimani-aggiornato-contatti p{font-size: 35}
+    
+    .rimani-aggiornato-contatti{border-bottom: 2px solid red; margin-left: -70; margin-top: -60}
+}
+
+@media (max-width: 400px){
+    
+    .rimani-aggiornato-contatti p{font-size: 28}
+    
+ 
+}
+
+
+/*DISCOGRAFIA*/
+
+.header-discografia{z-index: 1}
+
+.sfondo{ background: url('Discografia-Background.jpg'), linear-gradient(180deg, rgba(0,0,0,0.4) 30%, rgba(0,0,0,0.4) 30%) ; background-size: cover; background-repeat: no-repeat; height: 100vh; z-index: 0; width: 100%; position: fixed; background-position: center}
+
+
+.hero-discografia{ height: 100vh; display: flex; width: 100%; align-items: center; z-index: 3  }
+
+.hero__content-discografia{ margin: auto; margin-top: 200px;z-index: 3  }
+
+.hero__content-discografia h1 { font-size: 85; margin-bottom: 15px; text-align: center}
+
+.hero__content-discografia p{font-size: 40px; text-align: center; font-weight: 500}
+
+
+.bottone-ascoltaora-disco{align-self: center; margin-top: 100px; text-align: center}
+
+
+.ascoltaora-2-disco{ color: #fff;font-weight: bold; font-size: 30; padding: 20px; display: block; border-radius: 15px; border: 5px solid #fff; background: #000; max-width: 15%;min-width: 230px; margin-left: 100px; transition: 1s}
+
+.ascoltaora-2-disco:hover,
+.ascoltaora-2-disco:active{ background: #222 }
+
+
+.grid-luna{display: flex; }
+
+.colonna-luna1,
+.colonna-luna2{ padding: 50px;}
+
+.colonna-luna1{width: 40%;z-index: 4; border-right: 3px solid red;background: linear-gradient(180deg, rgba(0,0,0,0.6) 30%, rgba(0,0,0,0.6) 30%)  }
+
+.colonna-luna2{width: 60%;z-index: 4; padding-left: 80px; margin-left: 70px}
+
+.colonna-luna2 img{border: 3px solid #fff; width: 600px;}
+
+.colonna-luna1 h2,
+.colonna-luna2 h2{font-size: 45; color: #fff; font-weight: bold; }
+
+
+.sottotitolino{font-size: 20; font-weight: bold; color: #fff; opacity: 0.60}
+
+.presentazione{font-size: 20; font-weight: bold}
+
+.tracklist{margin: 100px 0; z-index: 5}
+
+
+.tracklist p{font-size: 36px; position: relative; z-index: 6; text-align: center; font-weight: bold}
+
+.track{color: red; text-decoration: underline solid red 3px;background: linear-gradient(180deg, rgba(0,0,0,0.4) 30%, rgba(0,0,0,0.4) 30%) }
+
+.ordine{text-decoration: underline solid #fff 3px ; color: #fff; background: linear-gradient(180deg, rgba(0,0,0,0.4) 30%, rgba(0,0,0,0.4) 30%) }
+
+
+
+
+
+
+@media (max-width: 1300px){
+    
+    .colonna-luna1,
+.colonna-luna2{width: 50%;}
+    
+    .colonna-luna2 img{border: 3px solid #fff; width: 100%;}
+ 
+    
+    .bottone-ascoltaora-disco{align-self: center; margin-top: 100px; transform: scale(0.6)}
+  
+    .colonna-luna1 h2,
+.colonna-luna2 h2{font-size: 30 }
+
+
+.sottotitolino{font-size: 19}
+
+.presentazione{font-size: 18}
+    
+}
+
+
+
+@media (max-width: 900px){
+    
+    .colonna-luna1,
+.colonna-luna2{padding: 15px;  }
+    
+    
+}
+
+
+@media (max-width: 800px){
+    
+    .colonna-luna1,
+    .colonna-luna2{width: 100%  }
+    
+    .colonna-luna2{margin-left: 0}
+    
+    .hero__content-discografia{margin-top: 150;}
+    
+    .bottone-ascoltaora-disco{margin-left: 20px;}
+    
+    .hero__content-discografia h1 { font-size: 40}
+
+   .hero__content-discografia p{font-size: 25}
+    
+    .grid-luna{margin-top: -450; flex-wrap: wrap}
+    
+   .sfondo{background-position: center}
+}
+
+
+@media (max-width: 800px){
+    
+  
+    
+    .bottone-ascoltaora-disco{margin-left: -20px;}
+    
+   .tracklist p{font-size: 25}
+}
+
+
+/*MEMBRI*/
+
+.scelta{display: flex; justify-content: center}
+
+.bottone-scoprialbum-lanostrastoria{opacity: 0.6}
+
+.scoprialbum-lanostrastoria:hover,
+.scoprialbum-lanostrastoria:active,
+.scoprialbum-componenti:hover,
+.scoprialbum-componenti:active
+{background: #fff; color: #000; border: 3px solid #000}
+
+.bottone-scoprialbum-componenti,
+.bottone-scoprialbum-lanostrastoria{align-self: center; margin-top: 245px; text-align: center}
+
+.scoprialbum-componenti,
+.scoprialbum-lanostrastoria{ color: #fff;font-weight: bold; font-size: 15; padding: 20px; display: block; border-radius: 15px; border: 3px solid #fff; background: #111; width: 50%; min-width: 145px; margin-left: 100px; transition: 1s }
+
+.scoprialbum-componenti{padding: 28px 28 28 18;}
+
+
+
+.membro{background: linear-gradient(180deg, rgba(0,0,0,0.4) 30%, rgba(0,0,0,0.4) 30%) , url('Live-basso-fabio.jpg'); background-size: cover; background-repeat: no-repeat; height: 150vh; width: 100%;  }
+
+.membro h1{font-size: 70; margin: 130px 0}
+
+.grid-membro{display: flex; margin-top: 20px;}
+
+.col-membro1,
+.col-membro2{ width: 50%; padding: 150px;}
+
+.col-membro1 img{width: 100%;height: 100%; object-fit: cover; border: 5px solid #fff; border-radius: 5px; min-width: 450px}
+
+
+.col-membro2{display: flex; align-items: center}
+
+.col-membro2 h2{font-size: 48; color: #fff; }
+
+.col-membro2 p{ color: #fff; font-size: 22}
+
+
+#membro-f{background: linear-gradient(180deg, rgba(0,0,0,0.4) 30%, rgba(0,0,0,0.4) 30%) , url('Fabio-Background.jpg'); background-size: cover; background-repeat: no-repeat; height: 100vh; width: 100%; }
+
+#membro-e{background:linear-gradient(180deg, rgba(0,0,0,0.4) 30%, rgba(0,0,0,0.4) 30%) , url('Emma-Background.jpg'); background-size: cover; background-repeat: no-repeat; height: 100vh; width: 100%; }
+
+#membro-m{background: linear-gradient(180deg, rgba(0,0,0,0.4) 30%, rgba(0,0,0,0.4) 30%) ,  url('Io-Background.jpg'); background-size: cover; background-repeat: no-repeat; height: 100vh; width: 100%; }
+
+#membro-c{background: linear-gradient(180deg, rgba(0,0,0,0.4) 30%, rgba(0,0,0,0.4) 30%) ,  url('Coma-Background.jpg'); background-size: cover; background-repeat: no-repeat; height: 100vh; width: 100%; }
+
+.sfondissimo-nero{background: #000; z-index: -2}
+
+
+
+/*Media membri pulsanti*/
+
+
+@media (min-width: 1000px){
+      
+.fotofff img{transform: scale(0.6)}
+   
+}
+
+@media (max-width: 1000px){
+      
+    .col-membro1 img{min-width: 300px; margin-left: -100}
+    .col-membro2 h2{font-size: 30 }
+
+    .col-membro2 p{font-size: 19; width: 100%;}
+    
+    .col-membro2{padding: 50}
+    
+    .grid-membro{margin-top: -70 }
+    
+
+}
+
+@media (max-width: 620px){
+      
+    
+    .scelta{margin-left: -60; margin-top: -80}
+    
+    .bottone-scoprialbum-componenti,
+.bottone-scoprialbum-lanostrastoria{transform: scale(0.75)}
+    .bottone-scoprialbum-lanostrastoria{margin-left: -60}
+    
+    .membro h1{font-size: 40;}
+    
+    .col-membro1,
+    .col-membro2{width: 100%;}
+    
+    .grid-membro{flex-wrap: wrap; margin-top: -150; }
+    
+    .col-membro1 img{margin-left: -100; min-width: 250}
+    
+    .membro{height: 1200px; background-attachment: fixed; }
+    
+    .col-membro2{margin-top: -150}
+    
+    #membro-f{flex-wrap: wrap;background-position: 30%; background-attachment: fixed;}
+    
+    #membro-e{background-position: 70%; background-attachment: fixed;}
+    
+    #membro-m{background-position: 40%; background-attachment: fixed;}
+    
+    #membro-c{background-position: 50%; background-attachment: fixed;}
+    
+    .fff{transform: translateY(600px)}
+    .fotofff{margin-top: -170}
+    
+    .mrk{transform: translateY(400px)}
+}
+
+@media (max-height: 800px) (max-width: 700px){
+      
+    .fff{transform: translateY(540px)}
+ 
+    .emmfoto{transform: translateY(-90px)}
+    
+    .emmtesto{transform: translateY(-100px)}
+    
+    .mrk{transform: translateY(400px)}
+}
+
+/* LA NOSTRA STORIA*/
+
+.hero-storia{background: url('ponte/img-muro.jpg'), linear-gradient(180deg, rgba(0,0,0,0.4) 30%, rgba(0,0,0,0.4) 30%) ; background-size: cover; background-repeat: no-repeat; height: 150vh; width: 100%; background-position: center}
+
+.foto-ponte{width: 100%;; height: 100%; align-items: flex-end; margin-left: -40;}
+
+#contenitore-foto-storia{object-fit: contain}
+
+.chisiamo{margin-top: -40px;}
+
+
+
+#gli-inizi{background: url('bbbasso.jpg'), linear-gradient(180deg, rgba(0,0,0,0.6) 30%, rgba(0,0,0,0.6) 30%) ; background-size: cover; background-repeat: no-repeat; height: 150vh; width: 100%; background-position: center}
+
+
+
+#arrivo-emma{background: url('Tavolino.jpg'), linear-gradient(180deg, rgba(0,0,0,0.4) 30%, rgba(0,0,0,0.4) 30%) ; background-size: cover; background-repeat: no-repeat; height: 150vh; width: 100%; background-position: center}
+
+
+.colonna-luna1st,
+.colonna-luna2st{ padding: 50px;}
+
+.colonna-luna1st{width: 60%;z-index: 4; border-right: 3px solid red;background: linear-gradient(180deg, rgba(0,0,0,0.7) 30%, rgba(0,0,0,0.7) 30%)  }
+
+.colonna-luna2st{width: 40%;z-index: 4; padding-left: 10px; margin-left: 40px}
+
+.colonna-luna2st img{border: 3px solid #fff; width: 100%; height: auto; min-width: 350; border-radius: 5px}
+
+.colonna-luna1st h2,
+.colonna-luna2st h2{font-size: 45; color: #fff; font-weight: bold; }
+
+#contenitore-foto-storia{margin-top: 450px; background: linear-gradient(180deg, rgba(0,0,0,0.6) 30%, rgba(0,0,0,0.6) 30%)  ; border-left: 3px solid red}
+
+.presentazione{font-size: 27}
+
+
+
+@media (max-width: 1200px){
+    
+    .aloora{flex-wrap: wrap}
+    
+    .aloora1,
+    .santrend{width: 100%;}
+    
+    
+    .aloora1{margin-top: 350px;}
+    
+    .santrend{margin-top: 0px !important;margin-left: 0}
+}
+
+
+@media (max-width: 800px){
+    
+    
+.colonna-luna1st,
+.colonna-luna2st{ padding: 5px;}
+    
+    .colonna-luna1st,
+    .colonna-luna2st{width: 100%  }
+    
+    .colonna-luna2st img{display: none}
+    
+    .colonna-luna2st{margin-left: 0}
+    
+    .grid-luna{margin-top: -450; flex-wrap: wrap}
+    
+    .chisiamo{ margin-top: -200 }
+    
+    #gli-inizi{margin-top: -350; background-position: left; background: url('basoo.jpg'); background-position: center; background-repeat: no-repeat}
+    
+    .arrivomc{margin-top: 20 !important}
+    
+    #arrivo-emma{margin-top: -300; }
+    
+    .santrend{margin-top: 20px !important; margin-left: 0;}
+    
+    #arrivo-emma{background-position: left}
+    
+}
+
+@media (max-width: 550px){
+    
+    .colonna-luna1st h2,
+.colonna-luna2st h2{font-size: 30; color: #fff; font-weight: bold; }
+    
+    
+    .colonna-luna1st p,
+.colonna-luna2st p{font-size: 18 }
+    
+    #arrivo-emma{margin-top: -600}
+    
+    .hero-storia{}
+
+    #contenitore-foto-storia{}
+
+    #gli-inizi{}
+    
+}
+
+/*GALLERY*/
+
+.menu--nero li a{color: #000}
+
+.gallery-title{font-size: 80; text-align: center; color: #000; margin-top: 220px}
+
+.contenitore-foto{width: 100%; display: flex; flex-wrap: wrap}
+
+.img-col1{width: 33%; object-fit: cover; padding: 3px; }
+
+.img-col1 img{width: 100%;height: 100%; border: 3px solid #000; border-radius: 5px;}
+
+
+
+.cont-fotogrande{width: 33%; object-fit: cover; padding: 7px
+}
+.cont-fotogrande img{width: 100%;height: 100%;}
+
+/*Modificatori larghezza*/
+
+.w100g{width: 100%}
+
+.w50g{width: 50%}
+
+.w60g{width: 60%; margin-left: 20px;}
+
+.scale{transform: scale(0.9)}
+
+/*Modificatori mt*/
+
+.mt1{margin-top: -150px;}
+
+.mb1{margin-bottom: -150px;}
+
+.ml1{margin-left: 55px;}
+
+.mano{display: none}
+
+@media (max-width: 800px){
+      
+     .img-col1{width: 50%;padding: 0px; margin-top: 10px;}
+    
+    .w100p{width: 100%; margin-left: 0;}
+    
+    .ml0{margin-left: 0;}
+    
+    .mano{display: block}
+   
+}
+
+
+@media (max-width: 800px){
+      
+     
+    .gallery-title{font-size: 50
+    
+   
+}
+
+}
+
